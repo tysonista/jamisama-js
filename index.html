@@ -5,13 +5,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width" , initial-scale=1.0 " />
-    <link rel="stylesheet " href="css/style.css " />
+    <link rel=" stylesheet " href=" css/style.css " />
     <title>재미사마</title>
 </head>
 <body>
-    <div id="title " >
-        <span></span>
+    <div id=" title ">
+    <span>햄버거 메뉴</span>
+    <span>재미사마</span>
+    <span>내정보</span>
     </div>
-    
+    <div id=" search-place ">
+        <span>장소</span>
+        <form class=" place-combobox ">
+            <select id=" state " name=" state ">
+                <option value=" all ">전체</option>
+                <option value=" gg ">경기</option>
+            </select>
+        </form>
+        <form class=" place-combobox ">
+            <select id=" city " name=" city ">
+                <option value=" all ">전체</option>
+            </select>
+        </form>
+        <form class=" place-combobox ">
+            <select id=" court " name=" court ">
+                <option value=" all ">전체</option>
+            </select>
+        </form>
+    </div>
+    <div id=" search-date ">
+        <span>일시</span>
+        <input type="date" name="search-start-date">
+        <input type="time" name="search-start-time">
+        ~
+        <input type="date" name="search-end-date">
+        <input type="time" name="search-end-time">
+        <br />
+        <button>조회하기</button>
+    </div>
+    <div id="searched-list">
+        <table></table>
+    </div>
 </body>
+
 </html>
